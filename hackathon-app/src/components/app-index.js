@@ -2,17 +2,19 @@ import _ from "lodash";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { Field, reduxForm } from "redux-form";
-import { fetchTastes } from "../actions";
+// import { Field, reduxForm } from "redux-form";
+import { fetchTastes, fetchArticles } from "../actions";
 import  SearchBar  from "./search-bar";
 
 class AppIndex extends Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
 
-  }
+  // }
 
   renderTastes() {
+
+
     return _.map(this.props.tastes, (taste, key) => {
       return (
         <li className="list-group-item" key={key}>
@@ -27,7 +29,9 @@ class AppIndex extends Component {
 
 
   render() {
-    const { handleSubmit } = this.props;
+    // const { handleSubmit } = this.props;
+    // for testing purposes 
+    this.props.fetchArticles('Bj%C3%B6rk');
 
     return (
       <div>
@@ -45,7 +49,7 @@ function mapStateToProps({ tastes }) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ fetchTastes }, dispatch);
+  return bindActionCreators({ fetchTastes, fetchArticles }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(AppIndex);
