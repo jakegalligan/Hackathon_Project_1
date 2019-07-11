@@ -1,10 +1,46 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, blinkmacsystemfont, "segoe ui", "roboto", "oxygen",
+    "ubuntu", "cantarell", "fira sans", "droid sans", "helvetica neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  width: 19.28%;
+  border-width: 2px;
+  display: inline-block;
+  height: 200px;
+  overflow: hidden;
+}
+
+.music {
+  background-color: purple;
+}
+.book {
+  background-color:blue;
+}
+.author {
+  background-color:pink;
+}
+.game {
+  background-color:yellow;
+}
+.movie {
+  background-color: red;
+}
+.show {
+  background-color: green;
+}
+
+.card-title {
+  overflow: hidden;
+  height:115px;
+}
+
+.card .fas {
+  font-size: 30px;
 }
 
 code {
