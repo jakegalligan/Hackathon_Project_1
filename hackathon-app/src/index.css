@@ -11,8 +11,16 @@ body {
   width: 19.28%;
   border-width: 2px;
   display: inline-block;
-  height: 200px;
+  height: 300px;
   overflow: hidden;
+}
+
+.card-img-top {
+  width:100%;
+  max-height:45%;
+  min-height:45%;
+  object-fit: cover;
+
 }
 
 .card-front, .card-back {
@@ -51,11 +59,15 @@ body {
 
 .card-title {
   overflow: hidden;
-  height:115px;
+  height:100px;
+}
+
+.card-body {
 }
 
 .card .fas {
-  font-size: 30px;
+  vertical-align: text-bottom;
+  font-size: 25px;
 }
 
 code {
