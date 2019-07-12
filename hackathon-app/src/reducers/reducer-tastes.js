@@ -23,7 +23,7 @@ export default function (state = {}, action) {
       if (action.payload.data && action.payload.data.query.pages[0].original) {
         imageUrl = action.payload.data.query.pages[0].original.source;
       } else {
-        imageUrl = 'none';
+        imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/A_blank_black_picture.jpg/1536px-A_blank_black_picture.jpg';
       }
       return _.mapValues(state, (taste) => (taste.wUrlTitle === urlTitle) ? Object.assign({}, taste, { imageUrl }) : taste);
     default:
