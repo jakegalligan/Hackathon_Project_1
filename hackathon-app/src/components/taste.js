@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+//import PropTypes from 'prop-types'
 
 const cardClick = (e) => {
   e.preventDefault();
@@ -10,7 +10,7 @@ const cardClick = (e) => {
 const categoryIcon = (category) => {
   var upperCaseCat = category.toUpperCase();
   console.log(upperCaseCat);
-  switch(upperCaseCat) {
+  switch (upperCaseCat) {
     case "MUSIC":
       return <i className="fas fa-music fa-fw"></i>;
     case "MOVIE":
@@ -28,17 +28,17 @@ const categoryIcon = (category) => {
   }
 }
 
-const Taste = ({ taste, key }) => (
-  <div className={"card mx-1 mt-1 " + (taste.Type)} id={key} onClick={cardClick}>
-         <div className="card-body">
-           <h4 className="card-title text-center">{taste.Name}</h4>
-           <div className="card-text">
-             <div className="icon text-center">{categoryIcon(taste.Type)}</div>
-             {/*<p>{taste.wTeaser}</p>
+const Taste = ({ taste }) => (
+  <div className={"card mx-1 mt-1 " + (taste.Type)} key={taste.id} onClick={cardClick}>
+    <div className="card-body">
+      <h4 className="card-title text-center">{taste.Name}</h4>
+      <div className="card-text">
+        <div className="icon text-center">{categoryIcon(taste.Type)}</div>
+        {/*<p>{taste.wTeaser}</p>
              <a href={taste.wUrl}>{taste.wUrl}</a> */}
-           </div>
-         </div>
-       </div>
+      </div>
+    </div>
+  </div>
 )
 
 export default Taste
