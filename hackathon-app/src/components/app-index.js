@@ -36,7 +36,7 @@ class AppIndex extends Component {
     return (
       <div>
         <nav className="navbar fixed-top navbar-dark bg-dark justify-content-center">
-        <div className="navbar-brand">Hackathon App</div>
+        <div className="navbar-brand">surfBored</div>
         <SearchBar />
         </nav>
         
