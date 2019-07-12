@@ -15,12 +15,20 @@ body {
   overflow: hidden;
 }
 
+.card:hover {
+  cursor: pointer;
+}
+
 .card-img-top {
   width:100%;
   max-height:45%;
   min-height:45%;
   object-fit: cover;
+  transition: all .2s ease-in-out;
+}
 
+.card:hover .card-img-top{
+  transform: scale(1.1);
 }
 
 .card-front, .card-back {
@@ -39,22 +47,22 @@ body {
 }
 
 .music {
-  background-color: purple;
+  background-color: #f9ebaa;
 }
 .book {
-  background-color:blue;
+  background-color:#d4e5b5;
 }
 .author {
-  background-color:pink;
+  background-color:#b6e4d1;
 }
 .game {
-  background-color:yellow;
+  background-color:#b6cee5;
 }
 .movie {
-  background-color: red;
+  background-color: #e5b5c5;
 }
 .show {
-  background-color: green;
+  background-color: #f1c8c0;
 }
 
 .card-title {
@@ -133,4 +141,12 @@ iframe {
 
 .popupInfo {
   text-align: left !important;
+}
+
+.container {
+  margin-top: 80px;
+}
+
+.navbar {
+  background-color: #747474; 
 }
