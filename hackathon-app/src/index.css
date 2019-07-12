@@ -98,29 +98,44 @@ code {
 }
 .popup_inner {
   position: absolute;
-  left: 15%;
-  right: 15%;
-  top: 15%;
-  bottom: 5%;
+  left: 25%;
+  right: 25%;
+  top: 6%;
+  bottom: 6%;
   margin: auto;
   background: white;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 iframe {
   margin: 5px;
+  text-align: center;
 }
 
 .holds-the-iframe {
+  text-align: center;
+  position: relative;
+  height: 40%;
+  width: 70%;
   background:url('https://media.giphy.com/media/y1ZBcOGOOtlpC/giphy.gif') center center no-repeat;
 }
 
 .close-button {
-  margin-top: 30px;
-  width: 15%;
+  margin-left: 20px;
+  width: 5%;
+  height: 5%;
+
 }
 
-.popupHead {
+.fa-window-close {
+  margin-left: 350px;
+}
 
+
+
+.popupHead {
+  display: inline-block;
   font-size: 30px;
 }
 
