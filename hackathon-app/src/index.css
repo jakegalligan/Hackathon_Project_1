@@ -31,21 +31,6 @@ body {
   transform: scale(1.1);
 }
 
-.card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-
-}
-
-.card-back {
-
-}
-
 .music {
   background-color: #f9ebaa;
 }
@@ -66,8 +51,8 @@ body {
 }
 
 .card-title {
-  overflow: hidden;
-  height:100px;
+  height:90px;
+  overflow: auto;
 }
 
 .card-body {

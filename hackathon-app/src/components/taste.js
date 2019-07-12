@@ -41,7 +41,7 @@ class Taste extends Component {
   render() {
     return (
       <div className={"card mx-1 mt-1 " + (this.props.taste.Type)} key={this.props.taste.id} onClick={this.togglePopUp} >
-        <img className="card-img-top" src={this.props.taste.imageUrl} />
+        <img className="card-img-top" src={this.props.taste.imageUrl} alt="" />
         <div className="card-body">
           <h4 className="card-title text-center">{this.props.taste.Name}</h4>
           <div className="card-text">
