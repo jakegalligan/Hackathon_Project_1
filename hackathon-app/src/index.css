@@ -51,8 +51,9 @@ body {
 }
 
 .card-title {
+  font-size: 1.2em;
   height:90px;
-  overflow: auto;
+  overflow: hidden
 }
 
 .card-body {
