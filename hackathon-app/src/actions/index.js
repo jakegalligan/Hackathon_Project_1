@@ -21,7 +21,6 @@ export function fetchTastes(searchFor) {
       info: 1
     }
   });
-  //request.then(() => callback());
 
   return {
     type: FETCH_TASTES,

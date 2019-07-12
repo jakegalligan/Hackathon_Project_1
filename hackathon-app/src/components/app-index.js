@@ -15,7 +15,6 @@ class AppIndex extends Component {
         var obj0 = this.props.tastes[key0];
         if (!obj0.hasOwnProperty('imageUrl')) {
           _.forIn(this.props.tastes, (value, key) => {
-            console.log(value.wUrlTitle);
             this.props.fetchArticles(value.wUrlTitle);
           });
         }
