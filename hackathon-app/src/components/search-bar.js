@@ -12,7 +12,7 @@ class SearchBar extends Component {
     return (
       <div className={className}>
         <label> </label>
-        <input className='form-control' id="search-input" type='text' {...field.input} />
+        <input className='form-control' id="search-input" placeholder="search" type='text' {...field.input} />
         <div className='text-help' style={{ color: 'red' }}>
           {touched ? error : ''}
         </div>
