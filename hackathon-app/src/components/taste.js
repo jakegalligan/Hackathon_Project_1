@@ -86,8 +86,11 @@ class Taste extends Component {
 
              {this.state.showPopUp ?  <div className='popup'>
                 <div className='popup_inner'>
-                  <h1 className = 'text-center popupHead'>{this.props.taste.Name}</h1>
-                  <i onClick={this.togglePopUp} className="fa fa-window-close" aria-hidden="true"></i>
+                  <div className='header'>
+                    <i onClick={this.togglePopUp} className="fa fa-window-close fa-2x" aria-hidden="true"></i>
+                    <br />
+                    <h1 className = 'text-center popupHead'>{this.props.taste.Name}</h1>
+                  </div>
 
                   <p className = 'popupInfo'>{this.props.taste.wTeaser}</p>
                   {this.props.taste.yUrl !== null ?<div className='holds-the-iframe'> <iframe src={this.props.taste.yUrl}  width="100%" height="100%" align='middle' onLoad={this.load}></iframe></div>
