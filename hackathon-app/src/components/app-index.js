@@ -2,30 +2,37 @@ import _ from "lodash";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-// import { Field, reduxForm } from "redux-form";
 import { fetchTastes, fetchArticles } from "../actions";
-import  SearchBar  from "./search-bar";
+import SearchBar from "./search-bar";
 import Taste from "./taste";
 
 class AppIndex extends Component {
-  // constructor(props) {
-  //   super(props);
 
-  // }
+  componentDidUpdate(prevProps) {
+    if (!_.isEqual(this.props.tastes, prevProps.tastes)) {
+      if (this.props.tastes) {
+        var key0 = _.keys(this.props.tastes)[0];
+        var obj0 = this.props.tastes[key0];
+        if (!obj0.hasOwnProperty('imageUrl')) {
+          _.forIn(this.props.tastes, (value, key) => {
+            console.log(value.wUrlTitle);
+            this.props.fetchArticles(value.wUrlTitle);
+          });
+        }
+      }
+    }
+  }
 
   renderTastes() {
     return _.map(this.props.tastes, (taste, key) => {
       return (
-        <Taste taste={taste} id={key} />
+        <Taste taste={taste} key={key}/>
       );
     });
   }
 
 
   render() {
-    // const { handleSubmit } = this.props;
-    // for testing purposes
-    // this.props.fetchArticles('Bj%C3%B6rk');
 
     return (
       <div>
