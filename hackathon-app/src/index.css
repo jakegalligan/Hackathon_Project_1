@@ -81,7 +81,7 @@ code {
   left: 15%;
   right: 15%;
   top: 15%;
-  bottom: 15%;
+  bottom: 5%;
   margin: auto;
   background: white;
 }
@@ -90,9 +90,13 @@ iframe {
   margin: 5px;
 }
 
+.holds-the-iframe {
+  background:url('https://media.giphy.com/media/y1ZBcOGOOtlpC/giphy.gif') center center no-repeat;
+}
+
 .close-button {
-  margin-top: 5px;
-  width: 100px;
+  margin-top: 30px;
+  width: 15%;
 }
 
 .popupHead {

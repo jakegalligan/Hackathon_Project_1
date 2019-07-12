@@ -43,14 +43,13 @@ class Taste extends Component {
   }
 
   togglePopUp() {
-    console.log(this.props)
     this.setState({
       showPopUp: !this.state.showPopUp
     })
   }
 
   load() {
-     console.log('error');
+     console.log('loading');
   }
 
 
@@ -87,7 +86,7 @@ class Taste extends Component {
                 <div className='popup_inner'>
                   <h1 className = 'text-center popupHead'>{this.props.taste.Name}</h1>
                   <p className = 'popupInfo'>{this.props.taste.wTeaser}</p>
-                  {this.props.taste.yUrl !== null ? <iframe src={this.props.taste.yUrl} width="700" height="350" align='middle' onError={this.load}></iframe>
+                  {this.props.taste.yUrl !== null ?<div className='holds-the-iframe'> <iframe src={this.props.taste.yUrl}  width="700" height="350" align='middle' onLoad={this.load}></iframe></div>
                 : <br /> }
                   <div>
                     <button className='close-button btn btn-primary' onClick={this.togglePopUp} >Close</button>
