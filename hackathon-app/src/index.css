@@ -27,7 +27,7 @@ body {
   transition: all .2s ease-in-out;
 }
 
-.card-img-top:hover {
+.card:hover .card-img-top{
   transform: scale(1.1);
 }
 
@@ -47,22 +47,22 @@ body {
 }
 
 .music {
-  background-color: purple;
+  background-color: #f9ebaa;
 }
 .book {
-  background-color:blue;
+  background-color:#d4e5b5;
 }
 .author {
-  background-color:pink;
+  background-color:#b6e4d1;
 }
 .game {
-  background-color:yellow;
+  background-color:#b6cee5;
 }
 .movie {
-  background-color: red;
+  background-color: #e5b5c5;
 }
 .show {
-  background-color: green;
+  background-color: #f1c8c0;
 }
 
 .card-title {
