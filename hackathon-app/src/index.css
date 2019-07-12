@@ -84,28 +84,57 @@ code {
 }
 .popup_inner {
   position: absolute;
-  left: 15%;
-  right: 15%;
-  top: 15%;
-  bottom: 15%;
+  left: 20%;
+  right: 20%;
+  top: 9%;
+  bottom: 6%;
   margin: auto;
   background: white;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 iframe {
   margin: 5px;
+  text-align: center;
 }
 
-.close-button {
-  margin-top: 5px;
-  width: 100px;
+.holds-the-iframe {
+  margin-left: 105px;
+  text-align: center;
+  position: relative;
+  height: 40%;
+  width: 70%;
+  background:url('https://media.giphy.com/media/y1ZBcOGOOtlpC/giphy.gif') center center no-repeat;
 }
+
+
+
+.fa-window-close {
+  margin-left: 675px;
+margin-top: 5px;
+
+}
+
+
 
 .popupHead {
-
+  display: inline-block;
   font-size: 30px;
+  margin-top: -150px;
+  margin-bottom: 20px;
 }
 
 .popupInfo {
   text-align: left !important;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container {
+  margin-top: 80px;
+}
+
+.navbar {
+  background-color: #747474;
 }

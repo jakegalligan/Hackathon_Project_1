@@ -11,8 +11,8 @@ class SearchBar extends Component {
 
     return (
       <div className={className}>
-        <label>{field.label}</label>
-        <input className='form-control' type='text' {...field.input} />
+        <label> </label>
+        <input className='form-control' id="search-input" type='text' {...field.input} />
         <div className='text-help' style={{ color: 'red' }}>
           {touched ? error : ''}
         </div>
@@ -29,13 +29,13 @@ class SearchBar extends Component {
 
     return (
       <div>
-        <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+        <form onSubmit={handleSubmit(this.onSubmit.bind(this))} className="form-inline align-middle">
           <Field
             label='Search'
             name='query'
             component={this.renderField}
           />
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <button type="submit" className="btn btn-outline-light my-2 my-sm-0"><i className="fa fa-search"></i></button>
         </form>
       </div>
     )
