@@ -127,3 +127,11 @@ iframe {
 .popupInfo {
   text-align: left !important;
 }
+
+.container {
+  margin-top: 80px;
+}
+
+.navbar {
+  background-color: #747474; 
+}
